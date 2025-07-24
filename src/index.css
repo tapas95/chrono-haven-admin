@@ -2,4 +2,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{@apply font-sans text-body leading-base font-normal text-base;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+body{@apply font-sans text-body leading-base font-normal text-theme;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}

@@ -22,7 +22,7 @@ const Login = () => {
                 </div>
             </form>
             <p className="relative border border-solid border-gray-100 my-8"><span className="block px-2 bg-white text-gray-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">OR</span></p>
-            <Button type="button" className="flex items-center justify-center gap-4 w-full !bg-gray-100 text-black capitalize !font-medium !border-gray-200 !rounded-[3rem]">
+            <Button type="button" className="flex items-center justify-center gap-4 w-full !bg-gray-100 !text-theme capitalize !font-medium !border-gray-200 !rounded-[3rem]">
                 <FcGoogle size={ 20 } />
                 <span className="block">Login With Google</span>
             </Button>

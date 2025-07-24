@@ -16,7 +16,7 @@ module.exports = {
         normal: '400'
       },
       colors:{
-        base: '#333333',
+        theme: '#333333',
         primary: '#006D5B'
       }
     },
