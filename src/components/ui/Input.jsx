@@ -7,7 +7,6 @@ const InputText = props => {
     const defaultInputFieldClass = `${ props.type === 'password' ? 'pl-4 pr-12' : 'px-4' } py-3 w-full border border-solid border-gray-300 outline-none rounded-md`;
     let [ passwordIsVisible, setPasswordIsVisible ] = useState( false );
     const handlePasswordVisibility = () =>  setPasswordIsVisible( passwordIsVisible = !passwordIsVisible );
-    console.log(props.type);
     if( props.type === 'password' ){
         return(
             <div className={ props.containerClass ? `mb-4 ${ props.containerClass }` : 'mb-4'.trim() }>
