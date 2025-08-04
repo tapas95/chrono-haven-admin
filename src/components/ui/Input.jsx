@@ -4,7 +4,7 @@ import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 
 const InputText = props => {
-    const defaultInputFieldClass = `${ props.type === 'password' ? 'pl-4 pr-12' : 'px-4' } text-sm py-3 w-full border border-solid border-gray-300 outline-none rounded-md`;
+    const defaultInputFieldClass = `${ props.type === 'password' ? 'pl-4 pr-12' : 'px-4' } text-sm py-3 w-full border border-solid border-gray-300 outline-none rounded-md focus:border-primary`;
     let [ passwordIsVisible, setPasswordIsVisible ] = useState( false );
     const handlePasswordVisibility = () =>  setPasswordIsVisible( passwordIsVisible = !passwordIsVisible );
     if( props.type === 'password' ){
@@ -19,6 +19,15 @@ const InputText = props => {
                 </div>
             </div>
         )   
+    } else if( props.type === 'checkbox' ){
+        return(
+            <div className={ props.containerClass ? `mb-4 ${ props.containerClass }` : 'mb-4'.trim() }>
+                <label htmlFor={ props.id } className="inline-flex items-center gap-2 text-sm text-gray-600">
+                    <input type="checkbox" id={ props.id } name={ props.id } className={ props.className ? props.className : ''.trim() } />
+                    <span className="block">{ props.label }</span>
+                </label>
+            </div>
+        )
     } else{
         return(
             <div className={ props.containerClass ? `mb-4 ${ props.containerClass }` : 'mb-4'.trim() }>
