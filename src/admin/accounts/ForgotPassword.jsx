@@ -3,7 +3,7 @@ import Button from "../../components/ui/Button";
 import { Link } from "react-router-dom";
 import { MdMarkEmailUnread } from "react-icons/md";
 
-const ForgotPassword = props => {
+const ForgotPassword = () => {
     return(
         <div className="px-8 py-12 bg-white rounded-lg w-[31.25rem] shadow-md">
             <div className="mb-8">
