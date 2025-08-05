@@ -19,8 +19,8 @@ const FullscreenToggle = () => {
         }
     }
     return(
-        <Button className="!p-0 bg-transparent !text-theme hover:!text-primary border-0" onClick={ handleScreenToggle }>
-            { isFullScreen ? <RxExitFullScreen size={ 24 } data-tooltip-id="screenTooltip" data-tooltip-content="Exit Fullscreen" /> : <GoScreenFull size={ 24 } data-tooltip-id="screenTooltip" data-tooltip-content="Enter Fullscreen" /> }
+        <Button className="block !p-0 bg-transparent !text-theme dark:!text-gray-400 hover:!text-primary dark:hover:!text-primary border-0" onClick={ handleScreenToggle }>
+            { isFullScreen ? <RxExitFullScreen size={ 24 } className="block" data-tooltip-id="screenTooltip" data-tooltip-content="Exit Fullscreen" /> : <GoScreenFull size={ 24 } className="block" data-tooltip-id="screenTooltip" data-tooltip-content="Enter Fullscreen" /> }
             <Tooltip id="screenTooltip" className="text-sm capitalize leading-none !p-2" />
         </Button>
     )

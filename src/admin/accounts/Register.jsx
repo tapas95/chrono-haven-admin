@@ -6,10 +6,10 @@ import { FiLogIn } from "react-icons/fi";
 
 const Register = () => {
     return(
-        <div className="px-8 py-12 bg-white rounded-lg w-[31.25rem] shadow-md">
+        <div className="px-8 py-12 bg-white dark:bg-gray-950 rounded-lg w-[31.25rem] border dark:border-gray-900 shadow-md">
             <div className="mb-8">
-                <h1 className="text-3xl leading-none font-bold mb-3">Create Account</h1>
-                <p className="text-gray-600">Create an admin account to manage ChronoHaven's products, orders, and dashboard.</p>
+                <h1 className="text-3xl leading-none font-bold dark:text-gray-200 mb-3">Create Account</h1>
+                <p className="text-gray-600 dark:text-gray-400">Create an admin account to manage ChronoHaven's products, orders, and dashboard.</p>
             </div>
             <form action="">
                 <div className="flex gap-4 mb-4">
@@ -34,12 +34,12 @@ const Register = () => {
                     </Button>
                 </div>
             </form>
-            <p className="relative border border-solid border-gray-100 my-8"><span className="block px-2 bg-white text-gray-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">OR</span></p>
-            <Button type="button" className="flex items-center justify-center gap-4 w-full !bg-gray-100 !text-theme capitalize !font-medium !border-gray-200 !rounded-[3rem]">
+            <p className="relative border-b border-solid border-gray-100 dark:border-gray-800 my-8"><span className="block px-2 bg-white dark:bg-gray-950 text-gray-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">OR</span></p>
+            <Button type="button" className="flex items-center justify-center gap-4 w-full !bg-gray-100 dark:!bg-gray-900 !text-theme dark:!text-gray-400 capitalize !font-medium !border-gray-200 dark:!border-gray-800 !rounded-[3rem]">
                 <FcGoogle size={ 20 } />
                 <span className="block">Login With Google</span>
             </Button>
-            <p className="text-sm text-gray-600 text-center mt-8">Already Have A Account? <Link to={ '/admin/login' } className="inline-block text-primary font-semibold underline cursor-pointer">Sign In</Link></p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 text-center mt-8">Already Have A Account? <Link to={ '/admin/login' } className="inline-block text-primary font-semibold underline cursor-pointer">Sign In</Link></p>
         </div>
     )
 }
